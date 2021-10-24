@@ -59,6 +59,10 @@ const CustomTabs = () => {
   return (
     <>
       <header className="clearfix">
+        <div>
+          <h1>The Black Swan </h1>
+          <h3>One Stop solution for online Brand Development</h3>
+        </div>
         <div
           style={{
             display: "flex",
@@ -69,12 +73,12 @@ const CustomTabs = () => {
           {" "}
           <img
             src="img/Black%20Swan-n.png"
-            style={{ maxWidth: "100px", maxHeight: "100px" }}
+            style={{
+              maxWidth: "100px",
+              maxHeight: "100px",
+              marginTop: "-120px",
+            }}
           />
-        </div>
-        <div>
-          <h1>The Black Swan </h1>
-          <h3>One Stop solution for online Brand Development</h3>
         </div>
       </header>
 
@@ -123,60 +127,85 @@ const CustomTabs = () => {
                   }}
                 />{" "}
               </a>
-              <h3>Young Indian health checkup</h3>
+              <h3>Young Indian Health Checkup</h3>
               <p>21-40 years Male & Female</p>
             </div>
             <div className="mediabox">
-              <img
-                src="img/male cancer marker.jpg"
-                alt="img02"
-                onClick={(e) => handleDiagnosticLeads(e, "MensCancer21_80")}
-                style={{
-                  maxWidth: "400px",
-                  maxHeight: "400px",
-                }}
-              />
-              <h3>Men's cancer marker checkup</h3>
+              <a href="#">
+                <img
+                  src="img/male cancer marker.jpg"
+                  alt="img02"
+                  onClick={(e) => handleDiagnosticLeads(e, "MensCancer21_80")}
+                  style={{
+                    maxWidth: "400px",
+                    maxHeight: "400px",
+                  }}
+                />
+              </a>
+              <h3>Men's Cancer Marker Checkup</h3>
               <p>21-80 years Male</p>
             </div>
             <div className="mediabox">
-              <img
-                src="img/wemen-cancer.jpg"
-                alt="img03"
-                onClick={(e) => handleDiagnosticLeads(e, "WomanCancer21_80")}
-                style={{
-                  maxWidth: "400px",
-                  maxHeight: "400px",
-                }}
-              />
-              <h3>Women's cancer marker checkup</h3>
+              <a href="#">
+                <img
+                  src="img/wemen-cancer.jpg"
+                  alt="img03"
+                  onClick={(e) => handleDiagnosticLeads(e, "WomanCancer21_80")}
+                  style={{
+                    maxWidth: "400px",
+                    maxHeight: "400px",
+                  }}
+                />
+              </a>
+              <h3>Women's Cancer Marker Checkup</h3>
               <p>21-80 years Female</p>
             </div>
-            <div className="mediabox">
-              <img
-                src="img/working woman hck.png"
-                alt="img01"
-                onClick={(e) => handleDiagnosticLeads(e, "WorkingWoman21_40")}
-                style={{
-                  maxWidth: "400px",
-                  maxHeight: "400px",
-                }}
-              />
-              <h3>Working women health checkup</h3>
+
+            <div
+              className="mediabox"
+              style={{ marginLeft: "14px", float: "inherit" }}
+            >
+              <a href="#">
+                <img
+                  src="img/working woman hck.png"
+                  alt="img01"
+                  onClick={(e) => handleDiagnosticLeads(e, "WorkingWoman21_40")}
+                  style={{
+                    marginLeft: "-14px",
+                    height: "216px",
+                  }}
+                />
+              </a>
+              <h3>Working Women Health Checkup</h3>
               <p>21-40 years Female</p>
             </div>
-            <div className="mediabox">
-              <img
-                src="img/senior citizen.jpg"
-                alt="img01"
-                onClick={(e) => handleDiagnosticLeads(e, "Senior60_100")}
-                style={{
-                  maxWidth: "400px",
-                  maxHeight: "400px",
-                }}
-              />
-              <h3>Senior citizen health checkup</h3>
-              <p>60- 100 years Male & Female</p>
+            <div
+              className="mediabox"
+              style={{
+                marginTop: "-110px",
+                float: "right",
+                marginLeft: "-455px",
+              }}
+            >
+              <a href="#">
+                <img
+                  src="img/senior citizen.jpg"
+                  alt="img01"
+                  onClick={(e) => handleDiagnosticLeads(e, "Senior60_100")}
+                  style={{
+                    width: "100%",
+                    marginLeft: "-455px",
+                    marginTop: "-191px",
+                    height: "221px",
+                  }}
+                />
+              </a>
+              <h3 style={{ marginLeft: "-455px" }}>
+                Senior Citizen Health Checkup
+              </h3>
+              <p style={{ marginLeft: "-455px" }}>
+                60- 100 years Male & Female
+              </p>
             </div>
           </section>
         </TabPanel>
@@ -232,7 +261,31 @@ const CustomTabs = () => {
           </div>
         </TabPanel>
         <TabPanel className="mediabox" style={{ display: "contents" }}>
-          <h2>Coming Soon</h2>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "stretch",
+            }}
+          >
+            <ul>
+              <li>
+                <h2>Finance</h2>
+              </li>
+              <li>
+                <h2>Horticulture Industry</h2>
+              </li>
+              <li>
+                <h2>Foreign Travel</h2>
+              </li>
+              <li>
+                <h2>Educational Services</h2>
+              </li>
+              <li>
+                <h2>Personalized Gift Industry </h2>
+              </li>
+            </ul>
+          </div>
         </TabPanel>
 
         <TabPanel

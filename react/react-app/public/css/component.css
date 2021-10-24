@@ -15,8 +15,8 @@
 	overflow: hidden;
 	margin: 1em 0 2em;
 	font-weight: 400;
-	font-size: larger;
-	color: #333333;
+	font-size: 21px;
+	color: #77767f;
 
 }
 
@@ -24,7 +24,9 @@
 .tabs nav {
 	text-align: center;
 }
-
+.tabs nav li.tab-current a{
+	color:black
+}
 .tabs nav ul {
 	padding: 0;
 	margin: 0;
@@ -40,10 +42,15 @@
 	float: left;
 	position: relative;
 }
-
-.tabs nav tab-current {
+.react-tabs__tab--selected{
 	border: 1px solid #47a3da;
 	box-shadow: inset 0 2px #47a3da;
+	border-bottom: none;
+	z-index: 100;
+}
+.tabs nav tab-current {
+	border: 1px solid #47a3da;
+	box-shadow: inset 0 10px #47a3da;
 	border-bottom: none;
 	z-index: 100;
 }
